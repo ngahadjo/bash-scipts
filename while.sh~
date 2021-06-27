@@ -1,0 +1,11 @@
+#!/bin/bash
+n=5
+while [ $n -gt 0 ]
+do
+mkdir ../testing
+echo "Hurry Up testing! is going to be destroyed in $n"
+sleep 1s
+echo " "
+((n=$n-1))
+rm -rf ../testing
+done
